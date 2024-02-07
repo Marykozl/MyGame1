@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Моя гра</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Камінь-Ножниці-Бумага</h1>
+        <div class="links">
+           <h3>Зроби свій вибір</h3>
+          <button id="pedra">Камінь!</button>
+          <button id="papel">Бумага!</button>
+          <button id="tesoura">Ножниці!</button>
+        </div>
+        <div class="computer">
+            <form id="pchoose">
+            <p>
+              <label for="pc">Компютер обирає:</label>
+              <input type="text" name="pc" readonly>
+            </p>
+          </form>
+        </div>
+       
+      <div class="count">
+          <form id="contar">
+           <label for="vic">Виграв:</label>
+           <input type="text" name="vic" readonly>
+            <label for="lose">Програв:</label>
+           <input type="text" name="lose" readonly>
+            <label for="empate">Нічія:</label>
+            <input type="text" name="empate" readonly>
+            
+            <input type="reset" value="Заново" id="reset">
+           </form>
+      </div>
+        
+      <div id="choose">
+          <div class="escolha">
+            <div id="win">
+              <h2 class="h2">Ти виграв!</h2>
+              <span>Вітаю!!!!</span>
+            </div>  
+        
+            <div id="lose">
+              <h2 class="h2">Ти Програв!<h2>
+              <span>:(</span>
+            </div>
+            <div id="draw">
+              <h2 class="h2">Нічія!</h2>
+              <span> Іншим разом...</span>
+          </div> 
+        </div>
+       </div>
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
